@@ -3,86 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PSO Login Page</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body{
-            height: 100%;
-            margin: 0;
-            /* display: flex; */
-            align-items: center;
-            justify-content: center;
-            background-image: url('assets/images/background.png'); /* Background image */
-            background-size: cover;
-            background-position: center;
-        }
-.container{
-    display: flex;
-            align-items: center;
-            justify-content: center;
+<style>
+    body{
+        font-family: Kanit;
 
+    }
+    .container-image img{
+        width: 100%;
+        overflow-x: hidden;
+        height: 828px;
+    }
+    .btn-xl {
+        padding: 1.5rem 25rem; 
+        font-size: 1.5rem; 
+        background-color:#39395F;
+        color: white;
+        border-radius: 5px;
+    }
+.footer{
+    border-top: 5px solid #39395F;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 200px;
 }
-        .login-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
-            max-width: 100%;
-        }
-
-        #logo{
-            display: block;
-            margin: 0 auto;
-            width: 170px;
-        }
-
-        .login-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
-
-        .form-control {
-            margin-bottom: 15px;
-        }
-
-        .btn-custom {
-            background-color: #355D32;
-            color: #fff;
-            width: 100%;
-            margin-bottom: 10px;
-        }
-
-        .btn-custom:hover {
-            background-color: #2b4b28;
-        }
-    </style>
+</style>
 </head>
 <body>
-    <img src="assets/images/logo.png" id="logo" alt="PSO Logo">
-    <div class="container">
-<div class="login-container text-center">
-    <!-- PSO Logo -->
-    <h2>Welcome!</h2>
-
-    <!-- Form -->
-    <form action="" method="POST">
-        <!-- Mobile Number -->
-        <div class="input-group mb-3">
-            <span class="input-group-text">+92</span>
-            <input type="text" class="form-control" placeholder="Mobile Number" name="mobile" required>
+    <div class="container-image w-100">
+        <img src="assets/images/hero.jpg" alt="hero-image">
+    </div>
+    <!-- 2nd section -->
+    <!-- 2nd section -->
+    <div class="container mt-5">
+        <div class="row justify-content-center g-4">
+            <div class="col-md-3 text-center">
+                <img src="assets/images/Frame 358.png" alt="" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="assets/images/Frame 359.png" alt="" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="assets/images/Frame 360.png" alt="" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="assets/images/Frame 361.png" alt="" class="img-fluid mb-3">
+            </div>
         </div>
-
-        <!-- Password -->
-        <input type="password" class="form-control" placeholder="Password" name="password" required>
-
-        <!-- Buttons -->
-        <button type="submit" class="btn btn-custom">Register</button>
-        <button type="submit" class="btn btn-custom">Log in</button>
-    </form>
-</div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    </div>
+    <!-- 3rd section -->
+    <div class="card mx-auto my-4 p-3" style="width: 80%;">
+        <div class="image text-center">
+            <img src="assets/images/card1.jpg" style="width:90%; height:400px;" alt="Card Image">
+        </div>
+        <div class="text-container d-flex justify-content-between my-3">
+            <div class="left-side-text">
+                <h3>30 days</h3>
+                <h3>Rs 10000</h3>
+            </div>
+            <div class="right-side-text text-end">
+                <h3>Offer 1</h3>
+                <h3>Rs 10000</h3>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <button class="btn-xl">Invest Now</button>
+        </div>
+    </div> 
+    <!--footer-->
+    <div class="footer-container w-100 mt-5 footer">
+        <div class="row d-flex justify-content-center align-items-center g-4" style="height: 100%;">
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <img src="assets/images/Group 1.png" alt="" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <img src="assets/images/Group 2.png" alt="" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <img src="assets/images/Group 3.png" alt="" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <img src="assets/images/Group 4.png" alt="" class="img-fluid mb-3">
+            </div>
+        </div>
+    </div>    
+    </body>
 </html>
